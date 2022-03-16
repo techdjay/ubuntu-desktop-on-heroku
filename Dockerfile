@@ -1,5 +1,5 @@
 # ------------------------------------------------------------
-# Start with Ubuntu Groovy Gorilla
+# Start with Ubuntu impish Gorilla
 # ------------------------------------------------------------
 
 FROM ubuntu:20.10
@@ -14,15 +14,15 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Set the sources
 # ------------------------------------------------------------
 
-RUN echo 'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy main restricted universe multiverse\n'\
-'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-security main restricted universe multiverse\n'\
-'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-updates main restricted universe multiverse\n'\
-'deb http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-backports main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-security main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-updates main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-proposed main restricted universe multiverse\n'\
-'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ groovy-backports main restricted universe multiverse\n'\
+RUN echo 'deb http://ubuntu.mirror.rain.co.za/ubuntu/ impish main restricted universe multiverse\n'\
+'deb http://ubuntu.mirror.rain.co.za/ubuntu/ impish-security main restricted universe multiverse\n'\
+'deb http://ubuntu.mirror.rain.co.za/ubuntu/ impish-updates main restricted universe multiverse\n'\
+'deb http://ubuntu.mirror.rain.co.za/ubuntu/ impish-backports main restricted universe multiverse\n'\
+'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ impish main restricted universe multiverse\n'\
+'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ impish-security main restricted universe multiverse\n'\
+'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ impish-updates main restricted universe multiverse\n'\
+'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ impish-proposed main restricted universe multiverse\n'\
+'deb-src http://ubuntu.mirror.rain.co.za/ubuntu/ impish-backports main restricted universe multiverse\n'\
 '' > /etc/apt/sources.list
 
 # ------------------------------------------------------------
